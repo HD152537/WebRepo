@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1">원래있던 문단</p>
+	</div>
+<script>
+	var newNode = document.createElement("p");
+	var textNode = document.createTextNode("새로운 문단");
+	newNode.appendChild(textNode);
+	<!-- newNode 부모에 자식 상속 시키기-->
+	
+	var div1 = document.getElementById("div1");
+	div1.appendChild(newNode);
+	<!-- div 부모에 자식 상속 시키기-->
+	div1.removeChild(p1);
+	<!-- id가 p1인 자식 삭제-->
+</script>
+</body>
+</html>
