@@ -37,7 +37,3 @@ function back()
 {
 	history.back();
 }
-function signup()
-{
-	location.href="signup.html";
-}
